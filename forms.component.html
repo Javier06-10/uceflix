@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario para subir peliculas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="forms.component.css">
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/">
+        <h1>Formulario para subir peliculas</h1>
+        <div class="item">
+          <p>Nombre</p>
+          <div>
+            <input type="text" name="name" placeholder="Escriba su el nombre" />
+          </div>
+        </div>
+
+        <div class="item">
+          <p>Seleccione la categoria </p>
+          <select>
+            <option value="">*Por favor seleccione*</option>
+            <option value="A">Series</option>
+            <option value="B">Peliculas</option>
+            <option value="C">Munequitos</option>
+          </select>
+        </div>
+        
+        <div class="item">
+          <label for="avatar">Seccione el archivo que desea subir</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        </div>
+      
+        <div class="item">
+            <p>Comentario</p>
+            <textarea rows="5"></textarea>
+          </div>
+        <div class="btn-block">
+          <button type="submit" (click)="addarticulo()" href="/">Enviar</button>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+</html>
